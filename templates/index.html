@@ -12,59 +12,94 @@
 </nav>  
 <form>
 <fieldset> 
-    <legend> Contact Information</legend>
+    <legend> Book Information</legend>
     <div> 
-        <label for="fname" > First name:
-            <input id="fname" type="text" autofocus required>
+        <label for="title" > Title:
+            <input id="title" type="text" autofocus required>
         </label>
     </div>
     <div>
-        <label for="lname" > Last Name: 
-            <input id="lname" type="text" required>
+        <label for="author" > Author: 
+            <input id="author" type="text" required>
         </label>
     </div><div> 
-        <label for="email" > Email Address:
-            <input id="email" type="email" required>
+        <label for="pages" > Number of Pages:
+            <input id="pages" type="number" required>
         </label>
-        </div><div>
-        <label for="phonenumber" > Phone Number:
-            <input type="tel" id="phonenumber" name="phonenumber" maxlength="10" required> 
-        </label> 
-    </div>
+        </div>
 </fieldset>
+<br>
 <fieldset> 
-    <legend> Gender </legend>
-    <div><label for="female">
-        <input type="radio" id="female" name="gender" value="female" > Female
+    <legend> Genre </legend>
+    <div><label for="nonfiction">
+        <input type="radio" id="nonfiction" name="genre" value="nonfiction" > Non-fiction
     </label>
 
-    <label for="male">
-        <input type="radio" id="male" name="gender" value="male" > Male
+    <label for="fiction">
+        <input type="radio" id="fiction" name="genre" value="fiction" > Fiction
     </label>
 
-    <label for="non-binary" > 
-        <input type="radio" id="non-binary" name="gender" value="non-binary" > Non-binary
+    <label for="mystery" > 
+        <input type="radio" id="mystery" name="genre" value="mystery" > Mystery
     </label>
-    <label for="prefer-not-to-say" >
-        <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say" > Prefer not to say
+
+    <label for="action" > 
+        <input type="radio" id="action" name="genre" value="action" > Action
     </label>
+
+    <label for="horror" >
+        <input type="radio" id="horror" name="genre" value="horror" > Horror
+    </label>
+
+    <label for="sciencefiction" >
+        <input type="radio" id="sciencefiction" name="genre" value="sciencefiction" > Science Fiction
+    </label>
+
+    <label for="historicalfiction" >
+        <input type="radio" id="historicalfiction" name="genre" value="historicalfiction" > Historical Fiction
+    </label>
+
+    <label for="fantasy" >
+        <input type="radio" id="fantasy" name="genre" value="fantasy" > Fantasy
+    </label>
+
+    <label for="romance" >
+        <input type="radio" id="romance" name="genre" value="romance" > Romance
+    </label>
+
     </div>
 </fieldset>
 <br>
 <fieldset>
-    <legend> Education </legend>
+    <legend> How did I get this book? </legend>
      <label for="dropdown">Select an option:</label>
     <select id="dropdown" name="dropdown">
-    <option value="option1">Did not complete high school</option>
-    <option value="option2">High school degree</option>
-    <option value="option3">Bachelors degree</option>
-    <option value="option4">Master's degree</option>
-    <option value="option5">Doctorate's degree</option>
-     <option value="option6">Other</option>
+    <option value="option1">--------</option>
+    <option value="option2">I purchased it physically</option>
+    <option value="option3">I purchased it electonically</option>
+    <option value="option4">I rented it electonically</option>
+    <option value="option5">I got it from a library</option>
+    <option value="option6">It was a gift</option>
+     <option value="option7">It was loaned to me by a friend</option>
     </select>
     </fieldset>
    <br>
-   <button type="submit" formaction="./WebFormDataCollection.xlsx" formmethod="post" formnovalidate="formnovalidate" onclick="window.location.href='./ThankYou.html';" > Submit Form
+   <fieldset>
+    <legend> Details </legend>
+<label for="option1">I've read this book</label>
+<input type="checkbox" id="option1" name="read" value="read">
+<br>
+ <label for="option2">I like this book</label>
+ <input type="checkbox" id="option2" name="like" value="like">
+ <br>
+<label for="option3">I recommend this book to others</label>
+<input type="checkbox" id="option3" name="recommend" value="recommend">
+ <br>
+ <label for="option4">I disliked this book</label>
+ <input type="checkbox" id="option4" name="dislike" value="dislike">
+</fieldset>
+<br>
+   <button type="submit" formaction="./WebFormDataCollection.xlsx" formmethod="post" formnovalidate="formnovalidate" onclick="window.location.href='./ThankYou.html';" > Submit
 </button>
 
 </form>
