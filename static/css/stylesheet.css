@@ -1,13 +1,35 @@
+head {
+    background-color: white;
+    padding: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+}
 
 body {
     background-color: lightslategray;
     padding: 5rem;
     margin-bottom: 5rem;
+    margin-left: 10rem;
   }
   
   fieldset {
-    background-color: rgb(238, 13, 13);
+    background-color: lightslategray;
     padding: 5rem;
     margin-top: 5rem;
+    margin-left: 10rem;
+  }
+
+  nav {
+    background-color: white;
+    padding: 5rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+
+  label {
+    background-color: lightgray;
+    padding: 5rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
   }
 
